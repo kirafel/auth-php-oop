@@ -1,0 +1,25 @@
+
+<?php if ($message != "") { 
+		?>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="alert alert-success"><?php echo $message; ?></div>
+				</div>
+			</div>
+		</div><?php
+	}
+?>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<form action="settings.php" method="post" role="form">
+				<div class="form-group">
+					<label for="email">E-mail</label>
+					<input type="email" class="form-control" name="email" value="<?php echo $email; ?>">
+				</div>
+				<button type="submit" class="btn btn-primary" name="submit-settings">Update</button>
+			</form>
+		</div>
+	</div>
+</div>

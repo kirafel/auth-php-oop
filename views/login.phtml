@@ -1,0 +1,29 @@
+<?php if ($error != "") { 
+		?>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="alert alert-danger"><?php echo $error; ?></div>
+				</div>
+			</div>
+		</div><?php
+	}
+?>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<form action="login.php" method="post" role="form">
+				<div class="form-group">
+					<label for="username">Username</label>
+					<input type="text" class="form-control" name="username" value="<?php echo $username; ?>">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="form-control" name="password" value="<?php echo $password; ?>">
+				</div>
+				<a class="btn btn-secondary" href="index.php">Back</a>
+				<button type="submit" class="btn btn-primary" name="submit-login">Login</button>
+			</form>
+		</div>
+	</div>
+</div>
